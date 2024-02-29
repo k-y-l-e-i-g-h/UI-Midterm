@@ -1,0 +1,20 @@
+<!-- search.html -->
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>Search Results</h1>
+<p>Showing results for "{{ query }}"</p>
+<div id="search-results">
+    {% if results %}
+        <ul>
+            {% for item in results %}
+                <li><a href="{{ url_for('view_item', id=item.id) }}">{{ item.title }}</a></li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No results found.</p>
+    {% endif %}
+</div>
+<script src="{{ url_for('static', filename='search.js') }}"></script>
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h1 id="welcome">Welcome to Mimi's Catisfaction Page!</h1>
+<div id="descr">This is a place to read Mimi's honest reviews on cat products, as well as find cheap alternatives for the products she doesn't like.</div>
+
+<h2 id="popular-title">Popular Items</h2>
+<div id="popular-items"></div>
+
+<!-- JavaScript to dynamically populate popular items -->
+<script src="{{ url_for('static', filename='home.js') }}"></script>
+
+{% endblock %}

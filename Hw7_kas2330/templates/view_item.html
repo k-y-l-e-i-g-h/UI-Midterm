@@ -1,0 +1,23 @@
+<!-- view_item.html -->
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>Item Details</h1>
+<div>
+    <h2>{{ item.title }}</h2>
+    <img src="{{ item.image }}" alt="{{ item.title }}" style="max-width: 300px;">
+    <p>Description: {{ item.description }}</p>
+    <p>Price: {{ item.price }}</p>
+    <p>Review: {{ item.review }}</p>
+    <p>Rating: {{ item.rating }}</p>
+    <p>Alternatives:</p>
+    <ul>
+        {% for alt in item.alternatives %}
+            <li>{{ alt }}</li>
+        {% endfor %}
+    </ul>
+</div>
+
+<!-- JavaScript to dynamically populate popular items -->
+<script src="{{ url_for('static', filename='home.js') }}"></script>
+{% endblock %}
