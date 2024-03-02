@@ -1,6 +1,34 @@
+
+/* Home Page */
+.navbar {
+    background-color: #a09a179e;
+}
+
+.navbar-brand {
+    font-family: 'Comfortaa', cursive; /* Apply Comfortaa font */
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+
 #search-form {
     margin-left: auto; /* Push search bar to the right */
 }
+/* Search button */
+.btn-outline-success {
+    color: white; /* Text color */
+    background-color: #3938127a;
+    border-color: #313608;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+/* Hover effect*/
+.btn-outline-success:hover {
+    background-color: #6a4e3b; /* Change background color on hover */
+    border-color: #3d2719; /* Retain border color on hover */
+    color: white; /* Change text color on hover */
+}
+
 #welcome {
     text-align: center;
     font-weight: bold;
@@ -12,12 +40,33 @@
     font-size: 18px;
 }
 
+#popular-title {
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+.conceptual-group {
+    text-align: center;
+    margin-top: 50px; /* Adjust margin as needed */
+}
+
+.mimi-photo {
+    max-width: 800px; /* Adjust the maximum width of the image */
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.description {
+    margin-top: 20px; /* Adjust spacing between image and text */
+    font-size: 18px; /* Adjust font size of the description */
+    /*line-height: 1.5; /* Adjust line height for better readability */
+}
+
+/* View Item Page */
 .item {
     width: 200px;
     margin: 10px; 
     display: inline-block;
 }
-#popular-title {
-    padding-left: 10px;
-    padding-top: 20px;
-}
+
+
