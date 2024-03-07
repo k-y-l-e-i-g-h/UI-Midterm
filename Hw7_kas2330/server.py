@@ -151,7 +151,84 @@ def view_item(id):
         return render_template('view_item.html', item=item)
     else:
         return "Item not found", 404
+    
+# Define the route for adding data
+@app.route('/add', methods=['GET', 'POST'])
+def add_item():
+    if request.method == 'POST':
+        # Handle form submission
+        title = request.form.get('title')
+        description = request.form.get('description')
+        image = request.form.get('image')
+        price = request.form.get('price')
+        review = request.form.get('review')
+        rating = request.form.get('rating')
+        alternatives = request.form.get('alternatives')
+        
+        if not title or not description:
+            # Return error response if required fields are empty
+            return jsonify({'error': 'Title and description are required.'}), 400
+        
+        alternatives_list = alternatives.split(',')
+        # Generate a unique ID for the new item
+        global current_id
+        current_id += 1
+        new_item = {
+            "id": current_id,
+            "title": title,
+            "description": description,
+            "image": image,
+            "price": price,
+            "review": review,
+            "rating": rating,
+            "alternatives": alternatives_list
+        }
+        
+        # Append the new item to the data list
+        data.append(new_item)
+        
+        # Return success response
+        return render_template('add_item.html', success_message='New item successfully created.', new_item_id=current_id)
 
+    # Render the template for adding a new item
+    return render_template('add_item.html')
+
+@app.route('/edit/<int:id>', methods=['GET', 'POST'])
+def edit_item(id):
+    # Find the item to edit based on the provided ID
+    item = next((item for item in data if item['id'] == id), None)
+    if not item:
+        return "Item not found", 404
+    
+    if request.method == 'POST':
+        # Handle form submission to update the item
+        title = request.form.get('title')
+        description = request.form.get('description')
+        image = request.form.get('image')
+        price = request.form.get('price')
+        review = request.form.get('review')
+        rating = request.form.get('rating')
+        alternatives = request.form.get('alternatives')
+        
+        if not title or not description:
+            return jsonify({'error': 'Title and description are required.'}), 400
+        
+        # Update the item's data
+        item.update({
+            "title": title,
+            "description": description,
+            "image": image,
+            "price": price,
+            "review": review,
+            "rating": rating,
+            "alternatives": alternatives
+        })
+        
+        # Return success response
+        return jsonify({'message': 'Item successfully updated.', 'id': id}), 200
+    
+    # Render the template for editing the item
+    return render_template('edit_item.html', item=item)
 
 if __name__ == '__main__':
    app.run(debug = True)
