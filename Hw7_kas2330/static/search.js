@@ -1,5 +1,3 @@
-/* search.js */
-
 $(document).ready(function() {
     // Handle form submission
     $('#search-form').submit(function(event) {

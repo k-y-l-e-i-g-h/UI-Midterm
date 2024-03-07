@@ -28,7 +28,6 @@
     border-color: #3d2719; /* Retain border color on hover */
     color: white; /* Change text color on hover */
 }
-
 #welcome {
     text-align: center;
     font-weight: bold;
@@ -39,23 +38,19 @@
     text-align: center;
     font-size: 18px;
 }
-
 #popular-title {
     padding-left: 10px;
     padding-top: 20px;
 }
-
 .conceptual-group {
     text-align: center;
     margin-top: 50px; /* Adjust margin as needed */
 }
-
 .mimi-photo {
     max-width: 800px; /* Adjust the maximum width of the image */
     display: block;
     margin: 0 auto; /* Center the image horizontally */
 }
-
 .description {
     margin-top: 20px; /* Adjust spacing between image and text */
     font-size: 18px; /* Adjust font size of the description */
@@ -69,4 +64,13 @@
     display: inline-block;
 }
 
+/* Search Results Page */
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+.small-text {
+    color: gray;
+    font-size: small;
+}
 
