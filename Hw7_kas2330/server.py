@@ -213,6 +213,7 @@ def edit_item(id):
         if not title or not description:
             return jsonify({'error': 'Title and description are required.'}), 400
         
+        alternatives_list = alternatives.split(',')
         # Update the item's data
         item.update({
             "title": title,
@@ -221,11 +222,11 @@ def edit_item(id):
             "price": price,
             "review": review,
             "rating": rating,
-            "alternatives": alternatives
+            "alternatives": alternatives_list
         })
         
         # Return success response
-        return jsonify({'message': 'Item successfully updated.', 'id': id}), 200
+        return render_template('view_item.html', item=item)
     
     # Render the template for editing the item
     return render_template('edit_item.html', item=item)
