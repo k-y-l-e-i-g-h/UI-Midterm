@@ -16,6 +16,7 @@
             <li>{{ alt }}</li>
         {% endfor %}
     </ul>
+    <a href="{{ url_for('edit_item', id=item.id) }}" class="btn btn-secondary">Edit</a>
 </div>
 
 <!-- JavaScript to dynamically populate popular items -->
