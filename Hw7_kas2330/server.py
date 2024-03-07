@@ -45,7 +45,7 @@ data = [
         "price": "FREE!",
         "review": "Similar to everything else I buy her, Mimi loved this tree for a few days-- I never saw her sit any where else for a good 72 hours. However, this effect did not last as she will not so much as look at it unless I smother the fabric in catnip. But it does look very cute and chique in the corner of my bedroom!",
         "rating": 3.0,
-        "alternatives": ["Couch", "Bed", "Kitche table"]
+        "alternatives": ["Couch", "Bed", "Kitchen table"]
     },
     {
         "id": 5,
@@ -226,6 +226,11 @@ def edit_item(id):
         })
         
         # Return success response
+        return render_template('view_item.html', item=item)
+    
+    # Check if the discard changes button was clicked
+    if request.args.get('action') == 'discard':
+        # Redirect to the view item page without making any changes
         return render_template('view_item.html', item=item)
     
     # Render the template for editing the item

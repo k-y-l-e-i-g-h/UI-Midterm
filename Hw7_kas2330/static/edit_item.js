@@ -26,17 +26,13 @@ $(document).ready(function() {
         });
     });
 
-    // Handle "discard changes" button click
-    $('#discard-changes').click(function() {
+    // Define the discardChanges function
+    function discardChanges(itemId) {
         // Display confirmation dialog
         if (confirm('Are you sure you want to discard changes?')) {
-            // Get the item ID from the URL
-            var itemId = window.location.pathname.split('/').pop();
-            
-            // Redirect to the view/<id> page
             window.location.href = '/view/' + itemId;
         }
-    });
+    }
 
 });
 
