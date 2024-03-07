@@ -1,6 +1,5 @@
 <!-- search.html -->
 {% extends "layout.html" %}
-
 {% block content %}
 <h1>Search Results</h1>
 <p>Showing results for "{{ query }}"</p>
@@ -8,13 +7,19 @@
     {% if results %}
         <ul>
             {% for item in results %}
-                <li><a href="{{ url_for('view_item', id=item.id) }}">{{ item.title }}</a></li>
+                <li>
+                    <a href="{{ url_for('view_item', id=item.id) }}">{{ item.title|highlight(query)|safe }}</a>
+                    {% if item.description %}
+                        <div class="small-text">Description: {{ item.description|highlight(query)|safe }}</div>
+                    {% endif %}
+                    {% if item.review %}
+                        <div class="small-text">Review: {{ item.review|highlight(query)|safe }}</div>
+                    {% endif %}
+                </li>
             {% endfor %}
         </ul>
     {% else %}
         <p>No results found.</p>
     {% endif %}
 </div>
-<script src="{{ url_for('static', filename='search.js') }}"></script>
-
 {% endblock %}
