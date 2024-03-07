@@ -109,6 +109,13 @@ data = [
     },
 ]
 
+# Define the highlight filter
+def highlight(text, query):
+    return text.replace(query, f'<span class="highlight">{query}</span>')
+
+# Register the filter with Jinja2
+app.jinja_env.filters['highlight'] = highlight
+
 # ROUTES
 @app.route('/')
 def home():
@@ -116,12 +123,19 @@ def home():
 
 @app.route('/search', methods=['GET'])
 def search():
+
     query = request.args.get('query').strip()
     if not query:  # If search query is empty or whitespace
         return render_template('search.html', query="", results=[], message="Please enter a valid search query.")
     
-    # Search for items containing the search query in their title
-    search_results = [item for item in data if query.lower() in item['title'].lower()]
+    # Search for items containing the search query in their title, description, or review
+    search_results = []
+    for item in data:
+        # Check if the query matches the title, description, or any review
+        if (query.lower() in item['title'].lower() or 
+            query.lower() in item['description'].lower() or 
+            query.lower() in item['review'].lower()):
+            search_results.append(item)
     
     if not search_results:
         message = "No results found."
