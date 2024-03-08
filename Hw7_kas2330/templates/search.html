@@ -1,19 +1,19 @@
 <!-- search.html -->
 {% extends "layout.html" %}
 {% block content %}
-<h1>Search Results</h1>
+<h1 class="search-results-title">Search Results</h1>
 <p>Showing results for "{{ query }}"</p>
 <div id="search-results">
     {% if results %}
         <ul>
             {% for item in results %}
-                <li>
-                    <a href="{{ url_for('view_item', id=item.id) }}">{{ item.title|highlight(query)|safe }}</a>
+                <li class="margin-ten">
+                    <a href="{{ url_for('view_item', id=item.id) }}" class="search-result-names">{{ item.title|highlight(query)|safe }}</a>
                     {% if item.description %}
-                        <div class="small-text">Description: {{ item.description|highlight(query)|safe }}</div>
+                        <div class="small-text"><span class="underline">Description:</span> {{ item.description|highlight(query)|safe }}</div>
                     {% endif %}
                     {% if item.review %}
-                        <div class="small-text">Review: {{ item.review|highlight(query)|safe }}</div>
+                        <div class="small-text"><span class="underline">Review:</span> {{ item.review|highlight(query)|safe }}</div>
                     {% endif %}
                 </li>
             {% endfor %}
