@@ -2,16 +2,17 @@
 
 {% block content %}
 
-<h1 id="welcome">Welcome to Mimi's Catisfaction Page!</h1>
+<h1 id="welcome">Welcome to The Catisfaction!</h1>
 
-<h2 class="conceptual-group">
-    <img src="{{ url_for('static', filename='mimi_photo.jpg') }}" alt="Mimi" class="mimi-photo">
+<div class="conceptual-group">
     <div class="description">
         <h2>About Mimi</h2>
         <p>Mimi is not just a cat-- she's a cherished member of our family. Her playful antics and affectionate nature bring joy to our lives every day. At Catisfaction, we're dedicated to providing honest reviews of cat products and offering alternatives for items that may not suit your feline friend. Join us in our mission to ensure every cat finds purrfection!</p>
-        <p id="descr">This is a place to read a cat's honest reviews on feline products, as well as find cheap alternatives for the products that just don't seem to stick.</p>
+        <p id="why">Why The Catisfaction?</p>
+        <p>This is a place to read a cat's honest reviews on feline products, as well as find cheap alternatives for the products that just don't seem to stick.</p>
     </div>
-</h2>
+    <img src="{{ url_for('static', filename='mimi_photo.jpg') }}" alt="Mimi" class="mimi-photo">
+</div>
 
 <h3 id="popular-title">Popular Items</h3>
 <div class="container">
