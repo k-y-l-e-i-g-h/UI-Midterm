@@ -4,7 +4,7 @@ from flask import Response, request, jsonify
 app = Flask(__name__)
 app.static_folder = 'static'
 
-current_id = 11
+current_id = 12
 
 data = [
     {

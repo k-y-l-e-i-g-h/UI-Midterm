@@ -3,17 +3,30 @@
 .navbar {
     background-color: #a09a179e;
 }
-
 .navbar-brand {
-    font-family: 'Comfortaa', cursive; /* Apply Comfortaa font */
+    font-family: 'Comfortaa', cursive; 
     font-size: 30px;
     color: white;
     font-weight: bold;
 }
-
+.navbar-brand:hover {
+    color: #6a4e3b; /* matching search button hover */
+}
+#cat-logo {
+    margin-top: 2px;
+}
 #search-form {
     margin-left: auto; /* Push search bar to the right */
 }
+#add {
+    font-family: 'Comfortaa', cursive; 
+    font-size: 15px;
+    color: white;
+}
+.navbar-nav .nav-link:hover {
+    color: #6a4e3b;
+}
+
 /* Search button */
 .btn-outline-success {
     color: white; /* Text color */
@@ -29,32 +42,52 @@
     color: white; /* Change text color on hover */
 }
 #welcome {
+    font-family: 'Comfortaa', cursive; 
     text-align: center;
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 30px;
-    margin: 20px;
+    margin: 30px;
 }
-#descr {
-    text-align: center;
-    font-size: 18px;
+.conceptual-group {
+    display: flex;
+}
+.mimi-photo {
+    max-width: 700px; /* Adjust the maximum width of the image */
+    margin: 0 auto; /* Center the image horizontally */
+    flex: 1;
+    border-radius: 15px;
+}
+.description {
+    margin-top: 20px; /* Adjust spacing between image and text */
+    font-size: 18px; /* Adjust font size of the description */
+    flex: 1;
+    padding-right: 20px;
+}
+#why {
+    font-weight: bold;
+    margin-bottom: 8px !important;
 }
 #popular-title {
     padding-left: 10px;
     padding-top: 20px;
 }
-.conceptual-group {
-    text-align: center;
-    margin-top: 50px; /* Adjust margin as needed */
+.card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
-.mimi-photo {
-    max-width: 800px; /* Adjust the maximum width of the image */
-    display: block;
-    margin: 0 auto; /* Center the image horizontally */
+.item {
+    border-radius: 15px;
 }
-.description {
-    margin-top: 20px; /* Adjust spacing between image and text */
-    font-size: 18px; /* Adjust font size of the description */
-    /*line-height: 1.5; /* Adjust line height for better readability */
+.stars::before {
+    /* content: '★★★★★';  */
+    letter-spacing: 1px;
+    /* color: gold;  */
+}
+.checked {
+    color: gold !important;
+}
+.fa-star {
+    color: lightgray; /* Color for empty stars */
 }
 
 /* View Item Page */
