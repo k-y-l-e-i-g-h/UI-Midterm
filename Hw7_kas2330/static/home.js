@@ -33,7 +33,7 @@ $(document).ready(function() {
     var popularItemsContainer = $('#popular-items');
     $.each(popularItems, function(index, item) {
         var itemHtml = '<div class="col-md-4 mb-3">';
-        itemHtml += '<div class="card item" style="cursor: pointer;">';
+        itemHtml += '<div class="card pop-item" style="cursor: pointer;">';
         itemHtml += '<img src="' + item.image + '" class="card-img-top" alt="' + item.title + '" data-item-id="' + item.id + '">';
         itemHtml += '<div class="card-body">';
         itemHtml += '<h5 class="card-title">' + item.title + '</h5>';

@@ -45,8 +45,11 @@
     font-family: 'Comfortaa', cursive; 
     text-align: center;
     font-weight: bolder;
-    font-size: 30px;
+    font-size: 35px;
     margin: 30px;
+}
+.gray-text {
+    color: gray;
 }
 .conceptual-group {
     display: flex;
@@ -62,6 +65,7 @@
     font-size: 18px; /* Adjust font size of the description */
     flex: 1;
     padding-right: 20px;
+    font-family: inherit;
 }
 #why {
     font-weight: bold;
@@ -69,14 +73,29 @@
 }
 #popular-title {
     padding-left: 10px;
-    padding-top: 20px;
+    font-size: 2rem;
+    font-family: 'Comfortaa';
+    text-align: center;
+    font-weight: bold;
+    background-color: #a09a174a;
+    width: 100%;
+    margin-bottom: 0px;
+    margin-top: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-right-width: 10px;
+    padding-right: 10px;
 }
 .card-img-top {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
-.item {
+#popular-items {
+    margin-top: 25px;
+}
+.pop-item {
     border-radius: 15px;
+    border: 1px solid #6a4e3b;
 }
 .stars::before {
     /* content: '★★★★★';  */
