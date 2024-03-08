@@ -112,6 +112,7 @@ data = [
         "title": "Churu Cat Treat",
         "description": "I discovered this treat after many years of rejection from Mimi. Churu's were designed to be fed directly from the tube to help support a strong bond between cat parents and their cats. They can also be used to help tame feral babies to teach them that humans are safe (by associating them with yummy treats). Your kitties will come running when they hear the rustling of our easy tear tubes.",
         "image": "https://m.media-amazon.com/images/I/81tAegdioKL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
+        "price": "12.99",
         "review": "I can finally say, I found a treat the Mimi is OBSESSED with. She follows me into the kitchen multiple times a day now in hopes that she will receive the beloved Churu. It comes highly recommended from her to store these delectible treats in the freezer, making them last longer and help provide relief from the NYC summer heat.",
         "rating": 5.0,
         "alternatives": ["There is quite literally nothing better than this."]

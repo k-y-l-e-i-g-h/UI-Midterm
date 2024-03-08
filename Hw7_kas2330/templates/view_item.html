@@ -2,23 +2,33 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<h1>Item Details</h1>
-<div>
-    <h2>{{ item.title }}</h2>
-    <img src="{{ item.image }}" alt="{{ item.title }}" style="max-width: 300px;">
-    <p>Description: {{ item.description }}</p>
-    <p>Price: {{ item.price }}</p>
-    <p>Review: {{ item.review }}</p>
-    <p>Rating: {{ item.rating }}</p>
-    <p>Alternatives:</p>
-    <ul>
-        {% for alt in item.alternatives %}
-            <li>{{ alt }}</li>
-        {% endfor %}
-    </ul>
-    <a href="{{ url_for('edit_item', id=item.id) }}" class="btn btn-secondary">Edit</a>
+<div class="item">
+    <div class="item-details">
+        <div class="item-image">
+            <img src="{{ item.image }}" alt="{{ item.title }}">
+        </div>
+        <div class="item-info">
+            <h2 class="display">{{ item.title }}</h2><a href="{{ url_for('edit_item', id=item.id) }}" class="btn btn-secondary display edit-button">Edit</a>
+            <h3 class="item-review-title">Mimi's Review:</h3>
+            <p class="item-review">{{ item.review }}</p>
+
+            <p class="item-alternatives">Alternatives:</p>
+            <ul class="item-alt-list">
+                {% for alt in item.alternatives %}
+                    <li>{{ alt }}</li>
+                {% endfor %}
+            </ul>
+            <p class="item-rating">Rating: <span id="rating-number">{{ item.rating }}</span></p>
+        </div>
+    </div>
+</div>
+<div class="item-description">
+    <h3>Description</h3>
+    <p>{{ item.description }}</p>
+    <h3>Price: {{ item.price }}</h3>
 </div>
 
 <!-- JavaScript to dynamically populate popular items -->
 <script src="{{ url_for('static', filename='home.js') }}"></script>
+
 {% endblock %}

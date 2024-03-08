@@ -92,9 +92,80 @@
 
 /* View Item Page */
 .item {
-    width: 200px;
-    margin: 10px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+.item-details {
+    display: flex;
+    align-items: flex-start;
+}
+.item-image img {
+    max-width: 700px;
+    height: auto;
+    border: 1px solid #5e5b169e;
+    padding: 15px;
+}
+.item-info {
+    margin-left: 70px;
+}
+.item-info h2 {
+    margin-top: 0;
+    font-family: 'Comfortaa', cursive;
+    text-decoration: underline;
+}
+.item-info p {
+    margin-top: 5px;
+}
+.item-review {
+    font-size: 18px;
+    color: gray;
+}
+.item-review-title {
+    margin-top: 30px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bolder;
+}
+.item-alternatives {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 16px;
+}
+.item-alt-list {
+    color: gray;
+    font-size: 16;
+}
+.item-rating {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+#rating-number {
+    color: gray;
+    margin-left: 10px;
+}
+.item-description {
+    margin-top: 20px;
+}
+.item-description h4 {
+    margin-top: 0;
+}
+.item-description p {
+    margin-top: 5px;
+}
+.display {
     display: inline-block;
+}
+.edit-button {
+    margin-left: 500px;
+    background-color: whitesmoke;
+    color: #5e5b169e;
+    border: 2px solid #5e5b169e;
+}
+.edit-button:hover {
+    background-color: #5e5b169e;
+    color: whitesmoke;
 }
 
 /* Search Results Page */
