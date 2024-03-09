@@ -239,12 +239,8 @@ def edit_item(id):
         # Return success response
         return render_template('view_item.html', item=item)
     
-    # Check if the discard changes button was clicked
-    if request.args.get('action') == 'discard':
-       return render_template('view_item.html', item=item)
-    
     # Render the template for editing the item
     return render_template('edit_item.html', item=item)
 
 if __name__ == '__main__':
-   app.run(debug = True)
+   app.run(debug = True, port=5001)

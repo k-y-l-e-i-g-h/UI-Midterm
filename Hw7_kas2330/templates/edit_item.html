@@ -17,7 +17,7 @@
         </div>
         <div class="form-group">
             <label for="image">Image URL:</label>
-            <input type="url" class="form-control" id="image" name="image" value="{{ item.image }}" required>
+            <input type="text" class="form-control" id="image" name="image" value="{{ item.image }}" required>
         </div>
         <div class="form-group">
             <label for="price">Price:</label>
@@ -37,10 +37,7 @@
         </div>
         <div class="button-container">
             <button type="submit" class="btn btn-primary submit-button">Submit</button>
-            <a href="{{ url_for('edit_item', id=item.id, action='discard') }}" class="btn btn-danger discard-button">Discard Changes</a>
-            <!-- <div id="dialog" title="Discard Changes">Are you sure you want to discard your changes?</div> -->
-            <!-- <a id="discard-button" class="btn btn-danger discard-button" data-item-id="{{ item.id }}">Discard Changes</a> -->
-
+            <button class="btn btn-danger discard-button" data-item-id="{{ item.id }}">Discard Changes</button>
         </div>
     </form>
 </div>

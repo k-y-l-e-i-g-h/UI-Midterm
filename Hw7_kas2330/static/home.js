@@ -41,9 +41,6 @@ $(document).ready(function() {
         itemHtml += '<div class="stars" data-rating="' + item.rating + '"></div>'
         itemHtml += '</div></div></div>';
         popularItemsContainer.append(itemHtml);
-
-        // // Call function to populate ratings
-        // populateStars();
     });
 
     $('.stars').each(function() {
