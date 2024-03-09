@@ -199,8 +199,8 @@ def add_item():
         data.append(new_item)
         
         # Return success response
-        return render_template('add_item.html', success_message='New item successfully created.', new_item_id=current_id)
-
+        return jsonify({'id': current_id})
+    
     # Render the template for adding a new item
     return render_template('add_item.html')
 
@@ -237,10 +237,10 @@ def edit_item(id):
         })
         
         # Return success response
-        return render_template('view_item.html', item=item)
+        return jsonify({'redirect': '/view/' + str(id)})
     
     # Render the template for editing the item
     return render_template('edit_item.html', item=item)
 
 if __name__ == '__main__':
-   app.run(debug = True)
+   app.run(debug = True, port=5001)

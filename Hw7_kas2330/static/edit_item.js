@@ -15,6 +15,7 @@ $(document).ready(function() {
             url: window.location.pathname,  // Use the current URL for submission
             data: formData,
             success: function(response) {
+                console.log(response)
                 window.location.href = response.redirect;
             },
             error: function(xhr, status, error) {

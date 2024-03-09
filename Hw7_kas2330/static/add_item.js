@@ -1,3 +1,5 @@
+/* add_item.js */
+
 // Submit form data via AJAX
 $('#add-item-form').submit(function(event) {
     // Prevent default form submission
