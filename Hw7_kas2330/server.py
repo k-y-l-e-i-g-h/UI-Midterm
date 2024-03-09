@@ -243,4 +243,4 @@ def edit_item(id):
     return render_template('edit_item.html', item=item)
 
 if __name__ == '__main__':
-   app.run(debug = True, port=5001)
+   app.run(debug = True)
