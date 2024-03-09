@@ -10,10 +10,10 @@
                 <li class="margin-ten">
                     <a href="{{ url_for('view_item', id=item.id) }}" class="search-result-names">{{ item.title|highlight(query)|safe }}</a>
                     {% if item.description %}
-                        <div class="small-text"><span class="underline">Description:</span> {{ item.description|highlight(query)|safe }}</div>
+                        <div class="small-text"><span class="underline gray-text">Description:</span> {{ item.description|highlight(query)|safe }}</div>
                     {% endif %}
                     {% if item.review %}
-                        <div class="small-text"><span class="underline">Review:</span> {{ item.review|highlight(query)|safe }}</div>
+                        <div class="small-text"><span class="underline gray-text">Review:</span> {{ item.review|highlight(query)|safe }}</div>
                     {% endif %}
                 </li>
             {% endfor %}

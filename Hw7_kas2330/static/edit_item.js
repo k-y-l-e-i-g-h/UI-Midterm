@@ -19,7 +19,6 @@ $(document).ready(function() {
                 window.location.href = response.redirect;
             },
             error: function(xhr, status, error) {
-                // Display error message
                 console.error(error);
                 alert('An error occurred while processing your request. Please try again.');
             }
@@ -30,10 +29,19 @@ $(document).ready(function() {
     function discardChanges(itemId) {
         // Display confirmation dialog
         if (confirm('Are you sure you want to discard changes?')) {
-            window.location.href = '/view/' + itemId;
+            window.location.href = '/edit/' + itemId + '?action=discard'; // 
         }
     }
 
+    // // Attach event handler to the "Discard Changes" button
+    // $('.discard-button').click(function(event) {
+    //     event.preventDefault(); 
+    //     console.log('Discard button clicked'); // Debugging message
+
+    //     var itemId = $(this).data('item-id');
+    //     console.log('Item ID:', itemId); // Debugging message
+
+    //     discardChanges(itemId); // Call discardChanges function with item ID
+    // });
+
 });
-
-

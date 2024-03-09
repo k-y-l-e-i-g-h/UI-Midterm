@@ -17,6 +17,7 @@ $(document).ready(function() {
     function populateStars() {
         $('.stars').each(function() {
           var rating = parseFloat($(this).attr('data-rating')); // Get rating from data attribute
+          console.log(rating);
           var starsHtml = '';
           for (var i = 0; i < 5; i++) {
             if (i < rating) {
@@ -37,14 +38,27 @@ $(document).ready(function() {
         itemHtml += '<img src="' + item.image + '" class="card-img-top" alt="' + item.title + '" data-item-id="' + item.id + '">';
         itemHtml += '<div class="card-body">';
         itemHtml += '<h5 class="card-title">' + item.title + '</h5>';
-        itemHtml += '<div class="stars" style="--rating:' + item.rating + ';"></div>'
+        itemHtml += '<div class="stars" data-rating="' + item.rating + '"></div>'
         itemHtml += '</div></div></div>';
         popularItemsContainer.append(itemHtml);
 
-        // Call function to populate ratings
-        populateStars();
+        // // Call function to populate ratings
+        // populateStars();
     });
 
+    $('.stars').each(function() {
+      var rating = parseInt($(this).attr('data-rating')); // Get rating from data attribute
+      console.log(rating);
+      var starsHtml = '';
+      for (var i = 0; i < 5; i++) {
+        if (i < rating) {
+          starsHtml += '<span class="fa fa-star checked"></span>';
+        } else {
+          starsHtml += '<span class="fa fa-star"></span>';
+        }
+      }
+      $(this).html(starsHtml); // Populate stars inside the container
+    });
     // Delegate click event to dynamically created elements
     popularItemsContainer.on('click', '.card.item', function() {
         var itemId = $(this).find('img').data('item-id');
