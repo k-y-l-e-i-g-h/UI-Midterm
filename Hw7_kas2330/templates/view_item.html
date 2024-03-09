@@ -21,7 +21,7 @@
                     <li>{{ alt }}</li>
                 {% endfor %}
             </ul>
-            <p class="item-rating">Rating: <span id="rating-number">{{ item.rating }}</span></p>
+            <p class="item-rating"><span class="rating-title">Rating:</span> <span class="stars" data-rating="{{ item.rating }}"></span><span id="rating-number">({{ item.rating }})</span></p>
         </div>
     </div>
 </div>

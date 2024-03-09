@@ -162,8 +162,12 @@
     font-size: 18px;
 }
 #rating-number {
-    color: gray;
+    color: lightgray;
     margin-left: 10px;
+    font-weight: lighter;
+}
+.rating-title {
+    margin-right: 5px;
 }
 .item-description {
     margin-top: 40px;

@@ -3,9 +3,9 @@ $(document).ready(function() {
     console.log("home.js is executing.");
     // Define data for popular items (You can modify this according to your data)
     var popularItems = [
-        {id: 11, title: "Churu Cat Treat", image: "../static/churu_small1.jpeg", rating: 5.0},
-        {id: 6, title: "Cat Dancer Toy", image: "../static/cat_dancer_med.jpeg", rating: 4.6},
-        {id: 2, title: "Electric Lady Bug", image: "../static/ladybug_med.jpeg", rating: 4.0}
+        {id: 11, title: "Churu Cat Treat", image: "../static/images/churu_small1.jpeg", rating: 5.0},
+        {id: 6, title: "Cat Dancer Toy", image: "../static/images/cat_dancer_med.jpeg", rating: 4.6},
+        {id: 2, title: "Electric Lady Bug", image: "../static/images/ladybug_med.jpeg", rating: 4.0}
     ];
 
     // Function to handle click on popular item

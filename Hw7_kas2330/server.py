@@ -11,7 +11,7 @@ data = [
         "id": 1,
         "title": "Octopus Toy",
         "description" : "This is an octopus cat toy that I bought for Mimi at the local pet store a year or two ago. It is about the size of a cup of yogurt, and colored in purple and pink with soft, corduroy-like material with two large eyeballs. It has a fun crinkle sound to encourage play, and supposedly came infused with catnip for extra excitement.",
-        "image": "https://image.chewy.com/is/image/catalog/91353_MAIN._AC_SL1200_V1539005297_.jpg",
+        "image": "../static/images/octopus_med.jpeg",
         "price": "$8.99",
         "review": "While the initial meet and greet with the octopus went well due to the catnip infusion, Mimi has not touched this toy since that day. The dog seems to enjoy it more, so we let him play with it instead.",
         "rating": 3.4,
@@ -21,7 +21,7 @@ data = [
         "id": 2,
         "title": "Electric Lady Bug Toy",
         "description" : "This is a lady bug cat toy that I bought for Mimi at the local pet store a year or two ago. It is about the size of a healthy cockroach, and colored in black and red, made of hard plastic material. It comes with a small battery that makes the toy vibrate, making it travel along the floor like a real bug. Meant to provide stimulation and exercise without the hassle of tossing a string in the air.",
-        "image": "https://m.media-amazon.com/images/I/31A4NAQiJEL._AC_SX679_.jpg",
+        "image": "../static/images/lady_med.jpeg",
         "price": "$12.99",
         "review": "I will say Mimi found this toy very interesting, however she never chased after it-- she simply sat and watched it buzz around the floor. It ran out of battery quite quickly and I have not found a replacement since.",
         "rating": 4.0,
@@ -31,7 +31,7 @@ data = [
         "id": 3,
         "title": "Wand Toy",
         "description" : "This toy will probably go down in history as the quintissential cat toy. This one in particular was a clear string attached to a long platsic stick with a fuzzy, brightly-colored worm-like animal on the end of it. It is meant to stimulates your kitty's natural hunting instincts to spark up play and exercise. This toy is the perfect way to provide cats with the daily exercise and mental stimulation they need.",
-        "image": "https://m.media-amazon.com/images/I/615Ccf+wziL._AC_SX679_.jpg",
+        "image": "../static/images/wand_med.jpeg",
         "price": "$9.98",
         "review": "This toy was probably one of Mimi's favorites when she was young. She would chase that worm like nothing I had ever seen. Unofortunately, the worm did brak off of the string after a month or two.",
         "rating": 4.8,
@@ -41,7 +41,7 @@ data = [
         "id": 4,
         "title": "Cat Tree",
         "description" : "This cat tree (along with every other one in my house) was found on the bountiful streets of NYC. This cat tree provides your feline friends with a cozy place to lounge and play. The freestanding design features an engineered wood frame wrapped in textured faux fur and sisal rope for a scratch-resistant surface. With three tiers, it includes a condo, three perches, and a scratching pad for endless entertainment. The brown and lime green color scheme adds a touch of tropical warmth to your home decor.",
-        "image": "https://assets.wfcdn.com/im/27838570/timg-h1000-w1000%5Ecompr-r85/1978/197825567/43.31%27%27+H+Timms+Cat+Tree.jpg",
+        "image": "../static/images/tree_med.jpeg",
         "price": "FREE!",
         "review": "Similar to everything else I buy her, Mimi loved this tree for a few days-- I never saw her sit any where else for a good 72 hours. However, this effect did not last as she will not so much as look at it unless I smother the fabric in catnip. But it does look very cute and chique in the corner of my bedroom!",
         "rating": 3.0,
@@ -51,7 +51,7 @@ data = [
         "id": 5,
         "title": "Premium Pet Water Fountain",
         "description" : "This item is an automatic water fountain that I found on Amazon's website. It holds 2.5 liters of water and constantly filters it. It is equipped with a water level window and fountain mode, matching the drinking habits of cats and dogs from the faucet. The fountain is made of food-grade BPA-free plastic to ensure pet safety.",
-        "image": "https://m.media-amazon.com/images/I/81-YlzDxojL._AC_SX679_.jpg",
+        "image": "../static/images/water_med.jpeg",
         "price": "$35.99",
         "review": "Besides her automatic feeder, this has probably been the best purchase I have made for Mimi. She has always been an avid water drinker, and this product allows for unlimited supply, and even filters out her fur from pawing at the pool. Only complaint is that it is hard to clean.",
         "rating": 4.8,
@@ -61,7 +61,7 @@ data = [
         "id": 6,
         "title": "Cat Dancer Toy",
         "description" : "This toy, gifted to me by a friend, is a very unique one-- the 'dancer' has a natural curve makes it bounce erratically when you wiggle it around to get your cat excited about play. It helps provide daily exercise and mental stimulation for cats by activating their hunting instincts, plus it's an excellent bonding activity.",
-        "image": "https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/photosV2/f30d732a-f0f6-4010-ad6e-26cf90a9b53a-retina-large.png",
+        "image": "../static/images/dancer_med.jpeg",
         "price": "$2.99",
         "review": "Mimi loves this toy! While the best part about it is that she can play with it by herself, it does take some initiation from me to get her going. It also comes with an attachment mechanism, making it easy to place on a wall or sturdy furniture.",
         "rating": 4.6,
@@ -71,7 +71,7 @@ data = [
         "id": 7,
         "title": "Temptations Cat Treats",
         "description" : "These treats I have bought a few packs of from CVS. They come in multiple flavors, each of which has less than 2 calories and provides a combination of both crunchy and soft textures. These healthy cat treats also come in a cat-proof, stay-fresh pouch, so your feline friend can enjoy their favorite snack when you open it, but never when they shouldn't!",
-        "image": "https://www.temptationstreats.com/cdn-cgi/image/width=600,height=600,f=auto,quality=90/sites/g/files/fnmzdf3061/files/migrate-product-files/images/jraobbkkworgewjstr9s.png",
+        "image": "../static/images/temp_med.jpeg",
         "price": "$2.58",
         "review": "When I first adopted Mimi, I came to realize that she doesn't really f**k with manufactured cat treats. These especially, with the hard exterior, are difficult for her to chew, leading to her discarding them on the floor.",
         "rating": 1.7,
@@ -81,7 +81,7 @@ data = [
         "id": 8,
         "title": "LickiMat",
         "description" : "This item I found at a local pet store when Mimi was experiencing vomiting due to eat too fats. It helps to mimic feeding like your kitty would experience in the wild with a natural crouch and prolonged meal experience. It is whisker friendly and promotes slower eating to reduce gulping.",
-        "image": "https://image.chewy.com/is/image/catalog/654654_PT1._AC_SL1200_V1667241319_.jpg",
+        "image": "../static/images/mat_med.jpeg",
         "price": "$21.99",
         "review": "This item was the answer to our prayers (or so we thought). Turns out Mimi eats her dry food too fast, not the wet food which we so delicately spread onto this mat every evening. I don't even know why we still use it, but I have faith in the desciption!",
         "rating": 3.0,
@@ -91,7 +91,7 @@ data = [
         "id": 9,
         "title": "PETLIBRO Automatic Feeder",
         "description" : "This item I ordered off Amazon when I knew I would be out of town for a while. The PETLIBRO AIR automatic cat feeder's top lid has a press-to-lock button to firmly lock the food tank and features a control panel cover to prevent accidental button presses from pets. It can run on both batteries and wall power.",
-        "image": "https://m.media-amazon.com/images/I/61xZGeIJgiL._AC_SY879_.jpg",
+        "image": "../static/images/feeder_med.jpeg",
         "price": "$44.07",
         "review": "This has got to be my #1 purchase for Mimi thus far. It took her a while to understand that I was no longer the one she needed to beg for dry food, but now she is a changed woman and runs for the bowl as soon as she hears the auto-feeder dispense her kibble. It saved a lot of stress for both of us.",
         "rating": 5.0,
@@ -101,7 +101,7 @@ data = [
         "id": 10,
         "title": "Reusable Pet Hair Remover",
         "description" : "This item I ordered through an Instagram advertisment is quite immpecable. It helps to quickly and easily remove cat and dog hair from furniture, carpet, car seats and more by simply dragging the metal edge across the furry area. The special edges collect pet hair, lint, and dust in seconds, as well as easy to use and infinitely reusable.",
-        "image": "https://img.kwcdn.com/product/1e23311c28/adc81f2e-d7a4-4eca-bf9a-dbcefe3db6be_800x800.png?imageView2/2/w/800/q/70",
+        "image": "../static/images/hair_med.jpeg",
         "price": "$5.99",
         "review": "This tool is fantastic! It helps to clean excess fur off of Mimi's cat trees and other spots she tends to frequent around the house. My main complaint would just be how tired my arm gets while trying the rid the entire living room area rug of cat fur. Mimi does not care much for it, however.",
         "rating": 4.5,
@@ -111,8 +111,8 @@ data = [
         "id": 11,
         "title": "Churu Cat Treat",
         "description": "I discovered this treat after many years of rejection from Mimi. Churu's were designed to be fed directly from the tube to help support a strong bond between cat parents and their cats. They can also be used to help tame feral babies to teach them that humans are safe (by associating them with yummy treats). Your kitties will come running when they hear the rustling of our easy tear tubes.",
-        "image": "https://m.media-amazon.com/images/I/81tAegdioKL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
-        "price": "12.99",
+        "image": "../static/images/churu_small.jpeg",
+        "price": "$12.99",
         "review": "I can finally say, I found a treat the Mimi is OBSESSED with. She follows me into the kitchen multiple times a day now in hopes that she will receive the beloved Churu. It comes highly recommended from her to store these delectible treats in the freezer, making them last longer and help provide relief from the NYC summer heat.",
         "rating": 5.0,
         "alternatives": ["There is quite literally nothing better than this."]
@@ -241,8 +241,7 @@ def edit_item(id):
     
     # Check if the discard changes button was clicked
     if request.args.get('action') == 'discard':
-        # Redirect to the view item page without making any changes
-        return render_template('view_item.html', item=item)
+       return render_template('view_item.html', item=item)
     
     # Render the template for editing the item
     return render_template('edit_item.html', item=item)
